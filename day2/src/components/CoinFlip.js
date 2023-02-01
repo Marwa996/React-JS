@@ -30,7 +30,7 @@ function CoinFlip() {
             <img src={img.image1} alt='head'></img>
         </div>
  
-      <button className='btn btn-success my-5' onClick={flip}>Flip the Coin</button>
+      <button className='btn btn-success my-5' onClick={flip} style={{fontSize:30}}>Flip the Coin</button>
       <h1 className='mt-5'>Total Flips:{total}, Heads Flips:{heads}, Tails Flips:{tails} </h1>
     </div>
   )
