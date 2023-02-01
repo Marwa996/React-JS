@@ -1,0 +1,8 @@
+.accordion{
+
+    display: flex;
+    justify-content: center;
+}
+.section{
+    cursor: pointer;
+}
