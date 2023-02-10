@@ -7,11 +7,18 @@ import ToDo from './Components/ToDo';
 import Movies from './Components/Movies';
 import Item from './Components/Item';
 import Navbar from './Components/Navbar';
-import Auth from './Components/Auth'
+import Auth from './Components/Auth';
+
+import Cart from './Components/Cart';
+import Counter from './Components/Counter';
+
+import { Provider } from 'react-redux';
+import { store } from './Redux/Store';
 function App() {
   return (
     <div>
       {/* <Movies/> */}
+      <Provider store={store}>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
@@ -25,7 +32,11 @@ function App() {
         </Route>
         
         <Route path='/login' element={<Login/>}></Route>
+
+        <Route path='/cart' element={<Cart/>}></Route>
+        <Route path='/counter' element={<Counter/>}></Route>
       </Routes>
+      </Provider>
     </div>
   );
 }
